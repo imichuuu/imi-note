@@ -1,0 +1,123 @@
+/* Import Karla Font */
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;700&display=swap');
+
+/* General Page Styling */
+body {
+    font-family: 'Karla', sans-serif;
+    text-align: center;
+    background-color: #e0f7fa; /* Light ocean blue */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #0077b6; /* Deep ocean blue */
+    color: white;
+    padding: 15px;
+    font-size: 24px;
+}
+
+/* Notes Section */
+.note-section {
+    padding: 20px;
+}
+
+/* Note List Container */
+#noteList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Individual Note Styling */
+.note {
+    background: #ffffff;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 15px rgba(0, 119, 182, 0.3); /* Soft blue shadow */
+    width: 260px;
+    text-align: left;
+    border-left: 5px solid #0077b6; /* Highlight border */
+}
+
+.note h3 {
+    margin: 0;
+    color: #005f73; /* Dark teal */
+    font-weight: 700; /* Bold */
+}
+
+.note p {
+    margin: 5px 0;
+    color: #023047; /* Deep sea blue */
+    font-weight: 400; /* Regular */
+}
+
+/* Buttons */
+button {
+    margin: 5px;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: 0.3s ease;
+    font-family: 'Karla', sans-serif;
+}
+
+.edit-btn {
+    background-color: #00b4d8; /* Bright ocean cyan */
+    color: white;
+}
+
+.edit-btn:hover {
+    background-color: #0077b6; /* Deep ocean blue */
+}
+
+.delete-btn {
+    background-color: #d62828; /* Coral red */
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: #a31621; /* Dark red */
+}
+
+/* Form */
+form {
+    margin-top: 20px;
+}
+
+/* Input Fields */
+input, textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid #0077b6; /* Deep ocean blue */
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: 'Karla', sans-serif;
+}
+
+/* Cancel Button */
+.cancel-btn {
+    background-color: #8ecae6; /* Light ocean blue */
+    color: white;
+}
+
+.cancel-btn:hover {
+    background-color: #005f73; /* Dark teal */
+}
+
+/* Footer */
+footer {
+    background-color: #0077b6;
+    color: white;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+    font-family: 'Karla', sans-serif;
+}

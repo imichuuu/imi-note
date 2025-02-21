@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imi's Notes</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <header>
+        <h1>IMI'S NOTES</h1>
+    </header>
+
+    <section class="note-section">
+        <h2>YOUR NOTES:</h2>
+        <div id="noteList"></div>
+
+        <h2>ADD OR EDIT NOTE HERE:</h2>
+        <form onsubmit="event.preventDefault(); addOrUpdateNote();">
+            <input type="hidden" id="noteId">
+            <input type="text" id="noteTitle" placeholder="Note Title" required>
+            <textarea id="noteContent" placeholder="Write your note here . . ." required></textarea>
+            <button id="saveButton">SAVE NOTE</button>
+            <button type="button" onclick="resetForm()" class="cancel-btn">CANCEL</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Imi's Notes | Simple Note-Taking Web-App 📝</p>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
